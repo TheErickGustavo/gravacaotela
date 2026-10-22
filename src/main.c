@@ -504,7 +504,7 @@ static void activate(GtkApplication *app, gpointer user_data)
     GtkWidget *window = gtk_application_window_new(app);
     state->window = window;
     gtk_window_set_title(GTK_WINDOW(window), "GravaçãoTela");
-    gtk_window_set_default_size(GTK_WINDOW(window), 540, 440);
+    gtk_window_set_default_size(GTK_WINDOW(window), 540, 500);
     gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
     gtk_container_set_border_width(GTK_CONTAINER(window), 18);
 
