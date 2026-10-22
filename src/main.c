@@ -363,6 +363,7 @@ static void start_recording(GtkButton *button, gpointer user_data)
     GPtrArray *args = g_ptr_array_new_with_free_func(g_free);
     add_arg(args, "ffmpeg");
     add_arg(args, "-hide_banner");
+    add_arg(args, "-nostats");
     add_arg(args, "-loglevel");
     add_arg(args, "error");
     add_arg(args, "-y");
